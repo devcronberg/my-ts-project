@@ -1,0 +1,71 @@
+{
+    // TypeScript snippets for quick coding - all prefixed with "ts_" for easy discovery
+    "Console log": {
+        "prefix": "ts_log",
+        "body": [
+            "console.log($1);"
+        ],
+        "description": "Quick console.log"
+    },
+    "Console log with label": {
+        "prefix": "ts_logl",
+        "body": [
+            "console.log('$1:', $1);"
+        ],
+        "description": "Console.log with label"
+    },
+    "Export function": {
+        "prefix": "ts_expfn",
+        "body": [
+            "export function ${1:functionName}($2): ${3:void} {",
+            "\t$0",
+            "}"
+        ],
+        "description": "Export a function"
+    },
+    "Function": {
+        "prefix": "ts_fn",
+        "body": [
+            "function ${1:functionName}($2): ${3:void} {",
+            "\t$0",
+            "}"
+        ],
+        "description": "Create a function"
+    },
+    "Arrow function": {
+        "prefix": "ts_af",
+        "body": [
+            "const ${1:functionName} = ($2): ${3:void} => {",
+            "\t$0",
+            "}"
+        ],
+        "description": "Create an arrow function"
+    },
+    "Interface": {
+        "prefix": "ts_int",
+        "body": [
+            "interface ${1:InterfaceName} {",
+            "\t$0",
+            "}"
+        ],
+        "description": "Create an interface"
+    },
+    "Type": {
+        "prefix": "ts_type",
+        "body": [
+            "type ${1:TypeName} = {",
+            "\t$0",
+            "}"
+        ],
+        "description": "Create a type"
+    },
+    "For loop": {
+        "prefix": "ts_for",
+        "body": [
+            "for (let i = 0; i < ${1:10}; i++) {",
+            "\t$0",
+            "}"
+        ],
+        "description": "Simple for loop"
+    }
+}
