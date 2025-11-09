@@ -187,6 +187,7 @@ This starter kit demonstrates:
 
 - ✅ **TypeScript compilation** with strict mode enabled
 - ✅ **ES Modules** (modern import/export syntax)
+- ✅ **Async/await** - Modern asynchronous JavaScript with fetch example
 - ✅ **Source maps** for debugging
 - ✅ **ESLint** - Code quality and linting
 - ✅ **Prettier** - Automatic code formatting
