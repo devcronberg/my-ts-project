@@ -20,10 +20,14 @@ export default [
       '@typescript-eslint': tseslint,
     },
     rules: {
-      '@typescript-eslint/no-unused-vars': 'warn',
+      '@typescript-eslint/no-unused-vars': ['warn', { 
+        argsIgnorePattern: '^_',
+        varsIgnorePattern: '^_',
+      }],
       '@typescript-eslint/no-explicit-any': 'warn',
       '@typescript-eslint/explicit-function-return-type': 'off',
       'no-console': 'off', // Allow console.log for learning
+      'no-unused-vars': 'off', // Turn off base rule as it can report incorrect errors
     },
   },
 ];
